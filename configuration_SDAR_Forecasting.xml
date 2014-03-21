@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<forecastingSDA>
+    <sendBack metricName="forecastingCPU" />
+    <method name="AR">
+        <parameters order="1" forecastPeriod="60"/>
+    </method>
+    <method name="ARMA">
+        <parameters autoregressive="2" integrated="1" movingAverage="1" forecastPeriod="30"/>
+    </method>
+    <!--   
+    <data fileName="cpu.mat" metricName="cpu_collectl" nbDataUsed="100"/>
+    -->
+</forecastingSDA>
