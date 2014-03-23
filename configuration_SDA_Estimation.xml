@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<estimationSDA>
+    <metric returnedMetric="demand">
+        <target>vm1,OFBiz,ResponseInfo</target>
+        <cpuUtil>vm1,Sigar,CPUUtil</cpuUtil>
+        <window>60000</window>
+        <method>ci</method>
+    </metric>
+</estimationSDA>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<wekaForecasting>
-   <fileName>data.arff</fileName>
-   <target>vm1_Sigar_CPUUtil</target>
-   <method>LinearRegression</method>
-   <predictionStep>12</predictionStep>
-</wekaForecasting>

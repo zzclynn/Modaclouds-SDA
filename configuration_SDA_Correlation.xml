@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<correlationSDA>
+    <metric returnedMetric="respTimeCorr">
+        <target>vm1,Sigar,CPUUtil</target>
+        <otherMetric>vm2,Sigar,CPUUtil</otherMetric>
+        <method>NaiveBayes</method>
+    </metric>
+</correlationSDA>

@@ -1,8 +1,8 @@
-function mat2arff(data,flag,name)
+function mat2arff(data,flag,name,outfile)
 
 dataarff = struct();
 relname = 'data';
-outfile = 'data.arff';
+%outfile = 'data.arff';
 
 if flag > 0
     basic_timestamps = data{flag,1};
@@ -20,6 +20,15 @@ end
 for i = 1:size(data,1)
     if (i ~= flag)
         data{i,2} = interp1(data{i,1},data{i,2},basic_timestamps);
+        
+        for j = 1:length(data{i,2})
+            if j <= length(data{i,2}) && isnan(data{i,2}(1,j))
+                basic_timestamps(j)=[];
+                for k = 1:size(data,1)
+                    data{k,2}(j)=[];
+                end
+            end
+        end
     end
 end
 

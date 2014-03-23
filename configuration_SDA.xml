@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<statisticalDataAnalyser>   
+    
+    <forecastingTimeSeries configurationFile="configuration_SDA_Forecasting.xml" period="90000"/>
+    
+    <forecastingML configurationFile="configuration_SDA_ForecastingML.xml" period="90000"/>
+    
+    <estimation configurationFile="configuration_SDA_Estimation.xml" period="90000"/>
+        
+    <correlation configurationFile="configuration_SDA_Correlation.xml" period="90000" trainingPeriod="60000"/>
+    
+</statisticalDataAnalyser>

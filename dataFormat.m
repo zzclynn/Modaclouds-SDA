@@ -21,8 +21,8 @@ function [data,delete] = dataFormat(data, period, cpu, cpu_time)
 
     start = min(data{3,1});
     for i = 2:size(data,2)-1
-        if ~isempty(data{3,i}) && start < min(data{3,i})
-            start = data{3,i}(1);
+        if ~isempty(data{3,i}) && start > min(data{3,i})
+            start = min(data{3,i});
         end
     end
     

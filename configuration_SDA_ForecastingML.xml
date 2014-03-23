@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ForecastingMLSDA>
+    <metric returnedMetric="CPUUtilForecast">
+        <target>vm1,Sigar,CPUUtil</target>
+        <otherMetric>vm2,Sigar,CPUUtil</otherMetric>
+        <method>LinearRegression</method>
+        <predictionStep>12</predictionStep>
+    </metric>
+</ForecastingMLSDA>
